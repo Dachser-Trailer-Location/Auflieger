@@ -1,0 +1,21 @@
+const marker = document.getElementById('marker');
+
+// Beispielkoordinaten für Standorte
+const positionen = {
+  KH4: { x: 120, y: 80 },
+  KH3: { x: 400, y: 150 },
+  KH2: { x: 700, y: 100 },
+  TL11: { x: 400, y: 400 }
+};
+
+// Funktion zum Anzeigen des Markers
+function zeigeMarker(ort) {
+  const pos = positionen[ort];
+  if (pos) {
+    marker.style.left = pos.x + 'px';
+    marker.style.top = pos.y + 'px';
+    marker.style.display = 'block';
+  } else {
+    marker.style.display = 'none';
+  }
+}
