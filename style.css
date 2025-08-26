@@ -1,23 +1,26 @@
-#bildContainer {
-    position: relative;
-    display: inline-block;
-  }
-  
-  #hofbild {
-    width: 100%;
-    max-width: 900px;
-    display: block;
-  }
-  
+body {
+  background: #222;
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+}
 
-  .marker {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    background-color: red;
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
-    display: none;
-    z-index: 10;
-  }
-  
+#map {
+  position: relative;
+  display: inline-block;
+}
+
+#hofbild {
+  width: 100%;
+  max-width: 900px;
+}
+
+.marker {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: red;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
